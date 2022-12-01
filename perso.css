@@ -1,0 +1,29 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(93,61,159,1) 0%, rgba(121,46,9,1) 100%, rgba(0,212,255,1) 100%);
+    margin: 20px;
+}
+h1, h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+h1{
+
+    font-size: 70px;
+    margin:0 ;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    margin-top: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: underline;
+    font-size: 40px;
+}
+p{
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 8px;
+    font-size: 20px;
+}
