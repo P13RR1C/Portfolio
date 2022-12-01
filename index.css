@@ -1,0 +1,228 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(to left, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 20px;
+}
+h1, h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+h1{
+
+    font-size: 70px;
+    margin:0 ;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    margin-top: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: underline;
+    font-size: 40px;
+}
+p{
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 8px;
+    font-size: 20px;
+}
+a{
+    color: white;
+}
+.pages > a{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 30px;
+}
+.ind:hover, .pers:hover, .pro:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+.pages > .ind:hover + .pro ~ .pers{
+    color: white;
+}
+.pages > .ind:hover + .pro{
+    color: white;
+}
+.pages:has(.pro:hover)>.ind{
+    color: white;
+} 
+.pages > .pro:hover + .pers{
+    color: white;
+}
+.pages:has(.pers:hover) > a{
+    color: white;
+} 
+span{
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+li{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 5Px;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size:20px;
+}
+.content{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.box1{
+    display: flex;
+    margin: 20px;
+    background-color: white;
+    border: double 10px black;
+    border-radius: 20px;
+}
+.box1 > img{
+    padding: 20px;
+    width: 200px;
+    float: left;
+}
+.paragraphes{
+    text-align: center;
+    display:grid;
+    grid-template-areas: 
+    "haut haut haut"
+    "gauche millieu droite";
+}
+.Pres{
+    grid-area: haut;
+}
+.gauche{
+    grid-area: gauche;
+}
+.millieu{
+    grid-area: millieu;
+}
+.droite{
+    grid-area: droite;
+}
+.Bas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.Langages, .Interets{
+    display: flex;
+    flex-direction: column;
+    border: 10px double black;
+    border-radius: 20px;
+    font-size: 40px;
+    background-color: white;
+}
+.Lang, .Inter{
+    margin: 10px;
+    border: 4px double black;
+    text-align: center;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    background-color: rgb(170, 167, 167);
+    list-style: none;
+    padding: 10px;
+}
+.Lang{
+    grid-area: gauche;
+}
+.Lang > p{
+    font-size: 30px;
+    margin: 0;
+}
+.Inter > p{
+    font-size: 30px;
+    margin: 0; 
+}
+.Inter{
+    grid-area: droite;
+}
+.pages{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 600px) {
+    *{
+        font-size: 10px;
+    }
+    .box1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    i{
+        font-size: 25px;
+    }
+    .box1 > img{
+        height:105px;
+        width: 80px;
+        float: left;
+    }
+    .paragraphes{
+        text-align: center;
+        grid-template-areas: 
+        "b"
+        "c"
+        "d"
+        "e"
+        "f";
+    }
+    .Pres{
+        grid-area: b;
+    }
+    .gauche{
+        grid-area: d;
+    }
+    .millieu{
+        grid-area: e;
+    }
+    .droite{
+        grid-area: f;
+    }
+    .Bas{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    p{
+            text-align: center;
+        padding: 0;
+    }
+    span{
+        font-size: 25px;
+    }
+    li{
+        font-size: 25px;
+    }
+    .Lang{
+        font-size: 15px;
+        padding: 0;
+    }
+    .Inter{
+        font-size: 15px;
+        padding: 0px;
+    }
+    .pages{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+}
+
